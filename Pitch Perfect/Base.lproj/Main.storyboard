@@ -152,8 +152,8 @@
                             <constraint firstAttribute="centerY" secondItem="nvq-JT-OYV" secondAttribute="centerY" constant="-174" id="bL1-9x-cfk"/>
                             <constraint firstItem="fhl-if-5fG" firstAttribute="leading" secondItem="LIg-Lf-FAP" secondAttribute="leadingMargin" constant="20" id="doz-c8-pYf"/>
                             <constraint firstItem="t76-qP-dmJ" firstAttribute="top" secondItem="VTs-RA-OwH" secondAttribute="bottom" constant="50" id="gvX-hv-idp"/>
+                            <constraint firstItem="fhl-if-5fG" firstAttribute="top" secondItem="u7v-fp-AZ3" secondAttribute="bottom" constant="36" id="kB4-N2-zcQ"/>
                             <constraint firstItem="u7v-fp-AZ3" firstAttribute="leading" secondItem="LIg-Lf-FAP" secondAttribute="leadingMargin" constant="20" id="oBz-Px-cxd"/>
-                            <constraint firstItem="Lyq-OL-Vbm" firstAttribute="top" secondItem="fhl-if-5fG" secondAttribute="bottom" constant="250" id="p5d-w1-boo"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -163,14 +163,14 @@
                                 <exclude reference="fhl-if-5fG"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="p5d-w1-boo"/>
-                                <exclude reference="doz-c8-pYf"/>
-                                <exclude reference="FYS-I0-EBA"/>
-                                <exclude reference="bL1-9x-cfk"/>
-                                <exclude reference="V5s-Sa-nxs"/>
-                                <exclude reference="gvX-hv-idp"/>
                                 <exclude reference="Sr1-5U-guZ"/>
                                 <exclude reference="oBz-Px-cxd"/>
+                                <exclude reference="doz-c8-pYf"/>
+                                <exclude reference="kB4-N2-zcQ"/>
+                                <exclude reference="V5s-Sa-nxs"/>
+                                <exclude reference="gvX-hv-idp"/>
+                                <exclude reference="FYS-I0-EBA"/>
+                                <exclude reference="bL1-9x-cfk"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -181,14 +181,14 @@
                                 <include reference="fhl-if-5fG"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="p5d-w1-boo"/>
-                                <include reference="doz-c8-pYf"/>
-                                <include reference="FYS-I0-EBA"/>
-                                <include reference="bL1-9x-cfk"/>
-                                <include reference="V5s-Sa-nxs"/>
-                                <include reference="gvX-hv-idp"/>
                                 <include reference="Sr1-5U-guZ"/>
                                 <include reference="oBz-Px-cxd"/>
+                                <include reference="doz-c8-pYf"/>
+                                <include reference="kB4-N2-zcQ"/>
+                                <include reference="V5s-Sa-nxs"/>
+                                <include reference="gvX-hv-idp"/>
+                                <include reference="FYS-I0-EBA"/>
+                                <include reference="bL1-9x-cfk"/>
                             </mask>
                         </variation>
                     </view>

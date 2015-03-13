@@ -13,12 +13,16 @@ class PlaySoundsViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     var receivedAudio:RecordedAudio!
+    var audioEngine:AVAudioEngine!
+    var audioFile:AVAudioFile!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)        
+        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
+        audioEngine = AVAudioEngine()
+        audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +43,30 @@ class PlaySoundsViewController: UIViewController {
 
     @IBAction func playChipmunkAudio(sender: UIButton) {
         println("User pressed the Chipmunk Audio button.")
+        playAudioWithVariablePitch(1000)
+    }
+    
+    func playAudioWithVariablePitch(pitch: Float){
+        println("Playing audio with a pitch value of \(pitch)")
+        
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+        
+        var audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+        
+        var changePitchEffect = AVAudioUnitTimePitch()
+        changePitchEffect.pitch = pitch
+        audioEngine.attachNode(changePitchEffect)
+        
+        audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
+        audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
+        
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        audioEngine.startAndReturnError(nil)
+        
+        audioPlayerNode.play()
     }
     
     @IBAction func stopAudioPlayback(sender: UIButton) {
