@@ -143,14 +143,25 @@
                                     <action selector="playChipmunkAudio:" destination="x4W-3i-hzv" eventType="touchUpInside" id="wUa-3o-brQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmO-ed-Esh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darth_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDarthAudio:" destination="x4W-3i-hzv" eventType="touchUpInside" id="o7d-yR-pj5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="nvq-JT-OYV" secondAttribute="centerX" id="FYS-I0-EBA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VmO-ed-Esh" secondAttribute="trailing" constant="20" id="JCh-id-kDA"/>
                             <constraint firstItem="u7v-fp-AZ3" firstAttribute="top" secondItem="VTs-RA-OwH" secondAttribute="bottom" constant="50" id="Sr1-5U-guZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t76-qP-dmJ" secondAttribute="trailing" constant="20" id="V5s-Sa-nxs"/>
                             <constraint firstAttribute="centerY" secondItem="nvq-JT-OYV" secondAttribute="centerY" constant="-174" id="bL1-9x-cfk"/>
                             <constraint firstItem="fhl-if-5fG" firstAttribute="leading" secondItem="LIg-Lf-FAP" secondAttribute="leadingMargin" constant="20" id="doz-c8-pYf"/>
+                            <constraint firstItem="VmO-ed-Esh" firstAttribute="top" secondItem="t76-qP-dmJ" secondAttribute="bottom" constant="36" id="fr4-up-0nY"/>
                             <constraint firstItem="t76-qP-dmJ" firstAttribute="top" secondItem="VTs-RA-OwH" secondAttribute="bottom" constant="50" id="gvX-hv-idp"/>
                             <constraint firstItem="fhl-if-5fG" firstAttribute="top" secondItem="u7v-fp-AZ3" secondAttribute="bottom" constant="36" id="kB4-N2-zcQ"/>
                             <constraint firstItem="u7v-fp-AZ3" firstAttribute="leading" secondItem="LIg-Lf-FAP" secondAttribute="leadingMargin" constant="20" id="oBz-Px-cxd"/>
@@ -161,6 +172,7 @@
                                 <exclude reference="t76-qP-dmJ"/>
                                 <exclude reference="nvq-JT-OYV"/>
                                 <exclude reference="fhl-if-5fG"/>
+                                <exclude reference="VmO-ed-Esh"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Sr1-5U-guZ"/>
@@ -169,6 +181,8 @@
                                 <exclude reference="kB4-N2-zcQ"/>
                                 <exclude reference="V5s-Sa-nxs"/>
                                 <exclude reference="gvX-hv-idp"/>
+                                <exclude reference="JCh-id-kDA"/>
+                                <exclude reference="fr4-up-0nY"/>
                                 <exclude reference="FYS-I0-EBA"/>
                                 <exclude reference="bL1-9x-cfk"/>
                             </mask>
@@ -179,6 +193,7 @@
                                 <include reference="t76-qP-dmJ"/>
                                 <include reference="nvq-JT-OYV"/>
                                 <include reference="fhl-if-5fG"/>
+                                <include reference="VmO-ed-Esh"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Sr1-5U-guZ"/>
@@ -187,6 +202,8 @@
                                 <include reference="kB4-N2-zcQ"/>
                                 <include reference="V5s-Sa-nxs"/>
                                 <include reference="gvX-hv-idp"/>
+                                <include reference="JCh-id-kDA"/>
+                                <include reference="fr4-up-0nY"/>
                                 <include reference="FYS-I0-EBA"/>
                                 <include reference="bL1-9x-cfk"/>
                             </mask>
@@ -218,6 +235,7 @@
     </scenes>
     <resources>
         <image name="chipmunk_button" width="100" height="100"/>
+        <image name="darth_button" width="100" height="100"/>
         <image name="fast_button" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow_button" width="100" height="100"/>

@@ -41,6 +41,12 @@ class PlaySoundsViewController: UIViewController {
         playAudioAtSpeed(2.5)
     }
 
+    @IBAction func playDarthAudio(sender: UIButton) {
+        println("User pressed the Darth Audio button.")
+        //playAudioWithVariablePitch(xxxxx)
+    }
+    
+    
     @IBAction func playChipmunkAudio(sender: UIButton) {
         println("User pressed the Chipmunk Audio button.")
         playAudioWithVariablePitch(1000)
