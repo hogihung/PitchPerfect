@@ -43,7 +43,7 @@ class PlaySoundsViewController: UIViewController {
 
     @IBAction func playDarthAudio(sender: UIButton) {
         println("User pressed the Darth Audio button.")
-        //playAudioWithVariablePitch(xxxxx)
+        playAudioWithVariablePitch(-1250)
     }
     
     

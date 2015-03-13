@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ThY-w1-Y5Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ThY-w1-Y5Q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -175,16 +175,16 @@
                                 <exclude reference="VmO-ed-Esh"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Sr1-5U-guZ"/>
-                                <exclude reference="oBz-Px-cxd"/>
-                                <exclude reference="doz-c8-pYf"/>
-                                <exclude reference="kB4-N2-zcQ"/>
-                                <exclude reference="V5s-Sa-nxs"/>
-                                <exclude reference="gvX-hv-idp"/>
                                 <exclude reference="JCh-id-kDA"/>
                                 <exclude reference="fr4-up-0nY"/>
+                                <exclude reference="doz-c8-pYf"/>
+                                <exclude reference="kB4-N2-zcQ"/>
                                 <exclude reference="FYS-I0-EBA"/>
                                 <exclude reference="bL1-9x-cfk"/>
+                                <exclude reference="V5s-Sa-nxs"/>
+                                <exclude reference="gvX-hv-idp"/>
+                                <exclude reference="Sr1-5U-guZ"/>
+                                <exclude reference="oBz-Px-cxd"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -196,16 +196,16 @@
                                 <include reference="VmO-ed-Esh"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Sr1-5U-guZ"/>
-                                <include reference="oBz-Px-cxd"/>
-                                <include reference="doz-c8-pYf"/>
-                                <include reference="kB4-N2-zcQ"/>
-                                <include reference="V5s-Sa-nxs"/>
-                                <include reference="gvX-hv-idp"/>
                                 <include reference="JCh-id-kDA"/>
                                 <include reference="fr4-up-0nY"/>
+                                <include reference="doz-c8-pYf"/>
+                                <include reference="kB4-N2-zcQ"/>
                                 <include reference="FYS-I0-EBA"/>
                                 <include reference="bL1-9x-cfk"/>
+                                <include reference="V5s-Sa-nxs"/>
+                                <include reference="gvX-hv-idp"/>
+                                <include reference="Sr1-5U-guZ"/>
+                                <include reference="oBz-Px-cxd"/>
                             </mask>
                         </variation>
                     </view>
