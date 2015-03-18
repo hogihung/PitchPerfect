@@ -27,12 +27,6 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2of-QZ-eIy"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqG-P8-TYk">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
-                                <color key="textColor" red="0.070588238537311554" green="0.82745105028152466" blue="0.08235294371843338" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-Pj-zJD">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop_button">
@@ -42,27 +36,36 @@
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pbS-r0-kQe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqG-P8-TYk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <color key="textColor" red="0.070588238537311554" green="0.82745105028152466" blue="0.08235294371843338" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="157" y="358" width="86" height="12"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="rqG-P8-TYk" secondAttribute="centerY" constant="-69" id="0z1-Py-uRV"/>
-                            <constraint firstAttribute="centerX" secondItem="rqG-P8-TYk" secondAttribute="centerX" id="Iir-Ou-IY5"/>
+                            <constraint firstAttribute="centerX" secondItem="rqG-P8-TYk" secondAttribute="centerX" id="E79-uC-Xkv"/>
                             <constraint firstAttribute="centerY" secondItem="w0h-yE-ay3" secondAttribute="centerY" id="Lvo-uc-8Oq"/>
                             <constraint firstAttribute="centerX" secondItem="w0h-yE-ay3" secondAttribute="centerX" id="PKM-p8-gLu"/>
+                            <constraint firstAttribute="centerY" secondItem="rqG-P8-TYk" secondAttribute="centerY" constant="-64" id="UHy-2l-JAT"/>
                             <constraint firstAttribute="centerX" secondItem="wVu-Pj-zJD" secondAttribute="centerX" id="UuI-oP-hW2"/>
                             <constraint firstAttribute="centerY" secondItem="wVu-Pj-zJD" secondAttribute="centerY" constant="-174" id="j4F-6X-vx9"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="w0h-yE-ay3"/>
-                                <exclude reference="rqG-P8-TYk"/>
                                 <exclude reference="wVu-Pj-zJD"/>
+                                <exclude reference="rqG-P8-TYk"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="0z1-Py-uRV"/>
-                                <exclude reference="Iir-Ou-IY5"/>
                                 <exclude reference="Lvo-uc-8Oq"/>
                                 <exclude reference="PKM-p8-gLu"/>
+                                <exclude reference="E79-uC-Xkv"/>
+                                <exclude reference="UHy-2l-JAT"/>
                                 <exclude reference="UuI-oP-hW2"/>
                                 <exclude reference="j4F-6X-vx9"/>
                             </mask>
@@ -70,14 +73,14 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="w0h-yE-ay3"/>
-                                <include reference="rqG-P8-TYk"/>
                                 <include reference="wVu-Pj-zJD"/>
+                                <include reference="rqG-P8-TYk"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="0z1-Py-uRV"/>
-                                <include reference="Iir-Ou-IY5"/>
                                 <include reference="Lvo-uc-8Oq"/>
                                 <include reference="PKM-p8-gLu"/>
+                                <include reference="E79-uC-Xkv"/>
+                                <include reference="UHy-2l-JAT"/>
                                 <include reference="UuI-oP-hW2"/>
                                 <include reference="j4F-6X-vx9"/>
                             </mask>

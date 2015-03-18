@@ -22,6 +22,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       // recordingInProgress.text = "Tap to record"
+       // recordingInProgress.hidden = false
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -34,7 +36,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func recordAudio(sender: UIButton) {
-        recordingInProgress.hidden = false
+        recordingInProgress.text = "recording"
+        //recordingInProgress.hidden = false
         stopButton.hidden = false
         recordButton.enabled = false
         
@@ -58,7 +61,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.delegate = self
         audioRecorder.meteringEnabled = true
         audioRecorder.record()
-        
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
@@ -73,7 +75,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             recordButton.enabled = true
             stopButton.hidden = true
         }
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -85,7 +86,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func stopRecording(sender: UIButton) {
-        recordingInProgress.hidden = true
+        recordingInProgress.text = "Tap to record"
+        //recordingInProgress.hidden = false
         stopButton.hidden = true
         recordButton.enabled = true
         
