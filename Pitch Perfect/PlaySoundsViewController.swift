@@ -48,6 +48,11 @@ class PlaySoundsViewController: UIViewController {
         playAudioWithVariablePitch(1000)
     }
     
+    @IBAction func stopAudioPlayback(sender: UIButton) {
+        println("User pressed the Stop Audio Playback button")
+        resetAudio()
+    }
+    
     func playAudioWithVariablePitch(pitch: Float){
         println("Playing audio with a pitch value of \(pitch)")
         
@@ -68,12 +73,7 @@ class PlaySoundsViewController: UIViewController {
         
         audioPlayerNode.play()
     }
-    
-    @IBAction func stopAudioPlayback(sender: UIButton) {
-        println("User pressed the Stop Audio Playback button")
-        resetAudio()
-    }
-    
+
     func playAudioAtSpeed(speed: Float) {
         println("User wants to play audio at a speed of \(speed)")
         
