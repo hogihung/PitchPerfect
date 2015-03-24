@@ -59,10 +59,10 @@
                                 <exclude reference="rqG-P8-TYk"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Lvo-uc-8Oq"/>
-                                <exclude reference="PKM-p8-gLu"/>
                                 <exclude reference="E79-uC-Xkv"/>
                                 <exclude reference="UHy-2l-JAT"/>
+                                <exclude reference="Lvo-uc-8Oq"/>
+                                <exclude reference="PKM-p8-gLu"/>
                                 <exclude reference="UuI-oP-hW2"/>
                                 <exclude reference="j4F-6X-vx9"/>
                             </mask>
@@ -74,10 +74,10 @@
                                 <include reference="rqG-P8-TYk"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Lvo-uc-8Oq"/>
-                                <include reference="PKM-p8-gLu"/>
                                 <include reference="E79-uC-Xkv"/>
                                 <include reference="UHy-2l-JAT"/>
+                                <include reference="Lvo-uc-8Oq"/>
+                                <include reference="PKM-p8-gLu"/>
                                 <include reference="UuI-oP-hW2"/>
                                 <include reference="j4F-6X-vx9"/>
                             </mask>
